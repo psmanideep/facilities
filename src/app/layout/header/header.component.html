@@ -1,0 +1,29 @@
+<header class="site-header" [class.scrolled]="scrolled">
+    <div class="top-strip">
+        <div>Corporate procurement partner</div>
+        <div>Serving Hyderabad & businesses across India</div>
+    </div>
+    <div class="header-inner">
+        <a class="brand" routerLink="/" aria-label="ProcureVanta home"><img src="assets/procurevanta-logo.jpg"
+                alt="ProcureVanta" /></a>
+        <button class="menu-button" type="button" (click)="menuOpen=!menuOpen" [attr.aria-expanded]="menuOpen"
+            aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+            <a routerLink="/about" routerLinkActive="active">About</a>
+            <a routerLink="/services" routerLinkActive="active">Procurement Services</a>
+            <a routerLink="/" fragment="process">Process</a>
+            <a routerLink="/contact" routerLinkActive="active">Contact</a>
+        </nav>
+        <a class="nav-cta" routerLink="/contact">Request a Quote <span>↗</span></a>
+    </div>
+    @if (menuOpen){
+    <nav class="mobile-nav">
+        <a routerLink="/" (click)="close()">Home</a>
+        <a routerLink="/about" (click)="close()">About</a>
+        <a routerLink="/services" (click)="close()">Procurement Services</a>
+        <a routerLink="/" fragment="process" (click)="close()">Process</a>
+        <a routerLink="/contact" (click)="close()">Contact</a>
+    </nav>
+    }
+</header>

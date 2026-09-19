@@ -1,0 +1,61 @@
+<section class="contact-hero">
+    <div class="eyebrow">CONTACT PROCUREVANTA</div>
+    <h1>Let’s source the <em>right requirement.</em></h1>
+    <p>Share what you need to procure. We’ll review the requirement and respond with the next step for sourcing,
+        quotation or procurement coordination.</p>
+</section>
+<section class="contact-wrap">
+    <div class="contact-info">
+        <div class="info-card highlight"><span>EMAIL</span><a
+                href="mailto:hello@procurevanta.in">hello@procurevanta.in</a><small>For procurement enquiries and
+                business conversations</small></div>
+        <div class="info-card"><span>LOCATION</span><strong>Hyderabad, Telangana, India</strong><small>Primary operating
+                location</small><a
+                href="https://www.google.com/maps/search/?api=1&query=Hyderabad%2C%20Telangana%2C%20India"
+                target="_blank" rel="noopener">Open location ↗</a></div>
+        <div class="info-card"><span>WORKING HOURS</span><strong>Monday – Saturday</strong><small>9:00 AM – 6:00 PM
+                IST</small></div>
+        <div class="info-card"><span>WHAT TO SEND</span><strong>Product · Quantity · Specification · Delivery
+                location</strong><small>Attach an RFQ or requirement document when available.</small></div>
+        <div class="notice"><b>Office address</b>
+            <p>Our operating location is Hyderabad, Telangana. The registered office address will be published here once
+                the company registration details are finalized.</p>
+        </div>
+    </div>
+    <form class="form-card" (ngSubmit)="submit()" #form="ngForm">
+        <div class="form-head"><span>PROCUREMENT ENQUIRY</span><strong>Tell us what you need.</strong></div>
+        <div class="form-grid">
+            <label><span>Your name *</span><input name="name" [(ngModel)]="data.name" required
+                    placeholder="Full name"></label><label><span>Company *</span><input name="company"
+                    [(ngModel)]="data.company" required placeholder="Company name"></label>
+            <label><span>Work email *</span><input type="email" name="email" [(ngModel)]="data.email" required
+                    placeholder="name@company.com"></label><label><span>Phone</span><input name="phone"
+                    [(ngModel)]="data.phone" placeholder="+91"></label>
+            <label class="full"><span>What do you need?</span><select name="category" [(ngModel)]="data.category">
+                    <option value="">Select a procurement category</option>
+                    <option>IT & Electronics</option>
+                    <option>Office Furniture</option>
+                    <option>Office Supplies</option>
+                    <option>Electrical & Engineering</option>
+                    <option>Housekeeping & Cleaning</option>
+                    <option>Pantry & Cafeteria</option>
+                    <option>Safety & Fire-Safety</option>
+                    <option>Corporate Gifting</option>
+                    <option>Strategic Sourcing</option>
+                    <option>Managed Procurement</option>
+                </select></label>
+            <label class="full"><span>Requirement *</span><textarea name="requirement" [(ngModel)]="data.requirement"
+                    required rows="7"
+                    placeholder="Example: 25 laptops, i5/16GB/512GB, delivery to Hyderabad, required by 15 October."></textarea></label>
+        </div>
+        <button class="submit" type="submit" [disabled]="form.invalid">Prepare enquiry email
+            <span>↗</span></button><small class="form-note">This website currently prepares an email in your default
+            mail client. A backend enquiry/RFQ workflow can be connected before launch.</small>
+    </form>
+</section>
+<section class="contact-bottom">
+    <div><span class="eyebrow">FASTEST WAY TO REACH US</span>
+        <h2>Send the requirement.<br>We’ll take it from there.</h2>
+    </div><a href="mailto:hello@procurevanta.in?subject=ProcureVanta%20procurement%20enquiry">Email procurement desk
+        ↗</a>
+</section>

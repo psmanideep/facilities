@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-labelledby="title desc">
+  <title id="title">ProcureVanta</title><desc id="desc">ProcureVanta corporate procurement logo</desc>
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#d9efad"/><stop offset="1" stop-color="#91b85f"/></linearGradient></defs>
+  <rect x="4" y="4" width="88" height="88" rx="25" fill="#102b24"/>
+  <path d="M25 67V29h21c13 0 21 6 21 17s-8 17-21 17H36" fill="none" stroke="url(#g)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M48 48l10 10 23-27" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="112" y="59" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="800" letter-spacing="-1.8" fill="#102b24">ProcureVanta</text>
+  <text x="114" y="80" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="700" letter-spacing="2.7" fill="#71806f">CORPORATE PROCUREMENT</text>
+</svg>

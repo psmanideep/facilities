@@ -1,0 +1,104 @@
+<section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+        <div class="hero-copy">
+            <div class="eyebrow"><span></span> B2B PROCUREMENT · HYDERABAD</div>
+            <h1>Procurement that<br><em>moves business.</em></h1>
+            <p>One dependable procurement partner for sourcing, vendor coordination and workplace supplies — built for
+                modern offices and growing businesses.</p>
+            <div class="hero-actions">
+                <a class="button button-dark" routerLink="/contact">Request a quotation <span>↗</span></a>
+                <a class="button button-light" routerLink="/services">Explore services</a>
+            </div>
+            <div class="trust-line"><span class="dot"></span> Focused on corporate procurement · B2B only</div>
+        </div>
+
+        <div class="hero-panel" aria-label="Procurement overview">
+            <div class="panel-top"><span>PROCUREMENT DESK</span><span>01 — 10</span></div>
+            <div class="panel-title">One partner.<br><strong>Multiple categories.</strong></div>
+            <div class="panel-list">
+                <div><span>01</span><b>IT & Electronics</b><i>→</i></div>
+                <div><span>02</span><b>Office & Furniture</b><i>→</i></div>
+                <div><span>03</span><b>Engineering & Electrical</b><i>→</i></div>
+                <div><span>04</span><b>Housekeeping & Pantry</b><i>→</i></div>
+            </div>
+            <div class="panel-foot">+ strategic sourcing & managed procurement</div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="section services">
+    <div class="section-heading">
+        <div>
+            <div class="eyebrow">WHAT WE PROCURE</div>
+            <h2>Everything your<br>workplace needs.</h2>
+        </div>
+        <p>From a single monitor to a complete office setup, we source across the categories businesses purchase every
+            day.</p>
+    </div>
+    <div class="service-grid">
+        @for (service of services; track service.no) {
+        <article class="service-card">
+            <div class="card-meta"><span>{{service.no}}</span><span>↗</span></div>
+            <h3>{{service.title}}</h3>
+            <p>{{service.description}}</p>
+            <div class="item-list">
+                @for (item of service.items; track item) { <span>{{item}}</span> }
+            </div>
+        </article>
+        }
+    </div>
+    <div class="section-link"><a routerLink="/services">View the complete procurement scope <span>→</span></a></div>
+</section>
+
+<section id="why-us" class="dark-section">
+    <div class="section narrow-heading">
+        <div class="eyebrow light">WHY PROCUREVANTA</div>
+        <h2>Less supplier chasing.<br><em>More business focus.</em></h2>
+    </div>
+    <div class="benefit-grid">
+        <article><span>01</span>
+            <h3>Multi-vendor sourcing</h3>
+            <p>We identify suitable suppliers, request quotations and create a clear commercial comparison.</p>
+        </article>
+        <article><span>02</span>
+            <h3>Transparent procurement</h3>
+            <p>Requirements, specifications, pricing and delivery expectations stay visible through the process.</p>
+        </article>
+        <article><span>03</span>
+            <h3>One procurement partner</h3>
+            <p>Reduce the effort of coordinating multiple vendors for recurring workplace requirements.</p>
+        </article>
+        <article><span>04</span>
+            <h3>Built to scale</h3>
+            <p>Start with individual requirements and grow into managed procurement as your needs increase.</p>
+        </article>
+    </div>
+</section>
+
+<section id="process" class="section process">
+    <div class="section-heading process-heading">
+        <div>
+            <div class="eyebrow">HOW IT WORKS</div>
+            <h2>From requirement<br>to delivery.</h2>
+        </div>
+        <p>A simple procurement flow designed around speed, commercial clarity and reliable coordination.</p>
+    </div>
+    <div class="process-grid">
+        @for (step of steps; track step.no) {
+        <div class="step"><span>{{step.no}}</span>
+            <h3>{{step.title}}</h3>
+            <p>{{step.description}}</p>
+        </div>
+        }
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="cta-copy">
+        <div class="eyebrow">HAVE A REQUIREMENT?</div>
+        <h2>Tell us what<br>you need sourced.</h2>
+        <p>Share the product, specification, quantity and delivery location. We’ll take it from there.</p>
+    </div>
+    <a class="button button-dark large" routerLink="/contact">Start a procurement request <span>↗</span></a>
+</section>
